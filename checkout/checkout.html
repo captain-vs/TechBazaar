@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Responsive Payment Gateway Form Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="input-box">
+                        <span>Full Name :</span>
+                        <input type="text"
+                        placeholder="type Name">
+                    </div>
+                    <div class="input-box">
+                        <span>Email :</span>
+                        <input type="email"
+                        placeholder="example@example.com">
+                    </div>
+                    <div class="input-box">
+                        <span>Address :</span>
+                        <input type="text"
+                        placeholder="Flat no - Street - Locality">
+                    </div>
+                    <div class="input-box">
+                        <span>City :</span>
+                        <input type="text"
+                        placeholder="type city">
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>State :</span>
+                            <input type="text"
+                            placeholder="type State">
+                        </div>
+                        <div class="input-box">
+                            <span>Pin Code :</span>
+                            <input type="number" min="6" max="6"
+                            placeholder="123456">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="title">Payment</h3>
+                    <div class="input-box">
+                        <span>Cards Accepted :</span>
+                        <img src="img/imgcards.png">
+                    </div>
+                    <div class="input-box">
+                        <span>Name On Card :</span>
+                        <input type="text"
+                        placeholder="Mr.zzzzz">
+                    </div>
+                    <div class="input-box">
+                        <span>Credit Card Number :</span>
+                        <input type="number" min="12" max="12"
+                        placeholder="111 222 333 444">
+                    </div>
+                    <div class="input-box">
+                        <span>Exp.Month :</span>
+                        <input type="text"
+                        placeholder="August">
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Exp.Year :</span>
+                            <input type="number" min="4" max="4"
+                            placeholder="2025">
+                        </div>
+                        <div class="input-box">
+                            <span>CVV :</span>
+                            <input type="number" min="3" max="3"
+                            placeholder="123">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="succespay.html" class="btn">Submit</a>
+        </form>
+    </div>
+</body>
+</html>

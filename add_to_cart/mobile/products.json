@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":"Samsung Z Flip 6",
+        "price": 109000,
+        "image": "image/pon.png"
+    },
+    {
+        "id": 2,
+        "name":" SAMSUNG 24 ULTRA",
+        "price": 125999,
+        "image": "image/samsung 24 ultra.webp"
+    },
+    {
+        "id": 3,
+        "name":"IPHONE 16 PRO MAX",
+        "price": 170990,
+        "image": "image/iphone15promax.png"
+    },
+    {
+        "id": 4,
+        "name":" SAMSUNG FOLD 6",
+        "price": 175000,
+        "image": "image/samsung fold 6.png"
+    },
+    {
+        "id": 5,
+        "name":" REDMI NOTE 13 PLUS",
+        "price": 27999,
+        "image": "image/redmi 13 pro+.webp"
+    },
+    {
+        "id": 6,
+        "name":" ONEPLUS 12",
+        "price": 39999,
+        "image": "image/oneplus 12.png"
+    },
+    {
+        "id": 7,
+        "name":" IPHONE 15",
+        "price": 73999,
+        "image": "image/iphone15.webp"
+    },
+    {
+        "id": 8,
+        "name":" PIXEL 9 PRO",
+        "price": 115999,
+        "image": "image/pixel9pro.webp"
+    }
+
+]

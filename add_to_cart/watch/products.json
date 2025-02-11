@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":"Apple Watch Ultra 2",
+        "price": 89900,
+        "image": "image/9.png"
+    },
+    {
+        "id": 2,
+        "name":" SAMSUNG Galaxy ULTRA",
+        "price": 59999,
+        "image": "image/8.png"
+    },
+    {
+        "id": 3,
+        "name":"NOISE COLORFIT 5 PRO",
+        "price": 6799,
+        "image": "image/7.png"
+    },
+    {
+        "id": 4,
+        "name":"FOSSIL MEN",
+        "price": 9990,
+        "image": "image/3.png"
+    },
+    {
+        "id": 5,
+        "name":"Galaxy 7",
+        "price": 29999,
+        "image": "image/5.png"
+    },
+    {
+        "id": 6,
+        "name":"MI REVOLVE",
+        "price": 11999,
+        "image": "image/6.webp"
+    },
+    {
+        "id": 7,
+        "name":"GOOGLE PIXEL 3",
+        "price": 40990,
+        "image": "image/4.png"
+    },
+    {
+        "id": 8,
+        "name":"APPLE ULTRA 2",
+        "price": 92990,
+        "image": "image/2.png"
+    }
+
+]
