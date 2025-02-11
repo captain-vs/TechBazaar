@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="192*192" href="img/logon1.png">
+    <title>aboutus</title>
+    <style>
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: #331818;
+    }
+    .header {
+        background-color: #561f04;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin: 0px;
+        padding: 14px 20px;
+    }
+    .header a {
+        color: rgb(255, 36, 36);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 8px;
+    }
+    .header a:hover {
+        background-color: #b84b4b;
+        color: black;
+        border-radius: 8px;
+    }
+    .header a.active {
+        background-color: #4bb8a6;
+        color: rgb(0, 0, 0);
+        border-radius: 8px;
+    }
+    /* Centered search box */
+    .search-container {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .search-container input[type="text"] {
+        width: 40%;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+    }
+    .login-button {
+            background-color: #ead3d1; /* Red background for login button */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px; /* Rounded corners for the login button */
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #240b0b; /* Darker red on hover */
+        }
+
+        .logout-button {
+            
+            color: #898989;
+            background-color: #795f5c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .about-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #5c1313;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30%;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="header">
+            <a class="active" href="index.html">Home</a>
+           
+    
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+            </div>
+    
+            <div>
+                <a href="pro4/contact us.html">Contact Us</a>
+                <a href="logout.html">Logout</a>
+               
+                <span id="user-status"></span>
+            </div>
+        </div>
+    
+    <section class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to our e-commerce store! We are committed to providing the best online shopping experience with a wide range of high-quality products. Our mission is to make your shopping easy, convenient, and enjoyable, offering you the best deals and seamless customer service.</p>
+       
+           
+        <h1>Slide 5: Key Features</h1>
+        <p>
+          User-friendly interface
+        Secure payment gateway
+Fast shipping (3-5 business days)
+24/7 customer support
+Product reviews and ratings
+</p>
+    <h1>  Slide 6: Why Choose Tech Bazaar?</h1> 
+<p>
+Competitive prices
+Authentic products
+Excellent customer support
+Secure payment gateway
+</p>
+    
+    
+    </section>
+
+    <footer>
+        &copy; 2024 Your E-Commerce Website. All rights reserved.
+    </footer>
+</body>
+</html>
