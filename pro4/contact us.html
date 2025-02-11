@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="192*192" href="img/logon1.png">
+    <title>Contact Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #331818;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+        background-color: #631e1ef2;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -18px;
+        padding: 14px 20px;
+    }
+    .header a {
+        color: rgb(255, 36, 36);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 8px;
+    }
+    .header a:hover {
+        background-color: #b84b4b;
+        color: black;
+        border-radius: 8px;
+    }
+    .header a.active {
+        background-color: #4bb8a6;
+        color: rgb(0, 0, 0);
+        border-radius: 8px;
+    }
+    /* Centered search box */
+    .search-container {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .search-container input[type="text"] {
+        width: 40%;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+    }
+
+
+.contact-info {
+    background-color: #7a4c4c;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding-right: 150px;
+}
+
+.feedback-form {
+    margin-top: 30px;
+}
+
+.feedback-form form {
+    background-color: #7a4c4c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+    margin-bottom: 15px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-form input, 
+.feedback-form textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.feedback-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4b4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #d94444;
+}
+.con{
+    color: white;
+    background-color: #a67c2d;
+    text-align: center;
+    margin-top: 34px;
+    width: 222px;
+    margin-left: 566px;
+    border-radius: 7px;
+}
+h2{
+    color: white;
+
+}
+p{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <a class="active" href="/College Project V/index.html">Home</a>
+           
+    
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+            </div>
+    
+            <div>
+                <a href="/College Project V/aboutus.html">About Us</a>
+                <a href="/College Project V/logout.html">Logout</a>
+               
+                <span id="user-status"></span>
+            </div>
+        </div>
+    </header>
+    <h1 class="con">Contact Us</h1>
+
+    <section class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:contact@yourwebsite.com">darshsuhagiya@gmail.com</a>
+        <p>Email: <a href="mailto:contact@yourwebsite.com">sutharvishnu511@gmail.com</a>
+        </p>
+        <p>Phone: <a href="tel:+1234567890">+91 9082366192</a></p>
+        <p>Phone: <a href="tel:+1234567890">+91 8928430348</a></p>
+    </section>
+
+    <section class="feedback-form">
+        <h2>Send Us Your Feedback</h2>
+        <form action="/submit-feedback" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your feedback" required></textarea>
+
+            <a href="/College Project V/index.html"> <button  type="submit">Submit Feedback</button></a>
+        </form>
+    </section>
+
+</body>
+</html>

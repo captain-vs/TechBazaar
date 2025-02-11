@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="192*192" href="img/logon1.png">
+    <title>Product Page</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+        
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #430000;;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1000px;
+            
+            margin: 20px auto;
+            margin-top: 2px;
+            padding: 190px;
+            padding-bottom: 220px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgb(232, 86, 86);
+            border-radius: 10px;
+        }
+        .product-image {
+          padding-left: 258px;
+          margin-left: -113px;
+          border-radius: 10px;
+          border: 2px solid red;
+          margin-top: -189px;
+          background-color: #740101;
+          width: 848px;
+        }
+        .product-image img {
+            
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .product-details {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .product-details h2 {
+            padding-bottom: 20px;
+
+            margin-bottom: 100px;
+        }
+        .product-price {
+            color: rgb(5, 2, 2);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .watchimage {
+        
+            display: block;
+            padding: auto;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }   
+        .rating {
+            margin: 10px 0;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 24px;
+            color: lightgray;
+            cursor: pointer;
+        }
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: gold;
+        }
+        .product-buttons {
+            margin-top: 20px;
+        }
+        .product-buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .add-to-cart {
+            background-color: #28a745;
+            color: white;
+        }
+        .buy-now {
+            background-color: #dc3545;
+            color: white;
+        }
+
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+.wm1{
+  width: 128%;
+  margin-left: -121px;
+}
+.wm2{
+  width: 151%;
+  margin-left: -162px;
+  margin-bottom: 27px;
+}
+
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+        
+        .footer {
+          background-color: #331818;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 46px;
+    margin-top: -8px;
+    padding-top: 1px;
+        }
+        
+        .header {
+        background-color: #331818;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin: 0px;
+        padding: 14px 20px;
+    }
+    .header a {
+        color: rgb(255, 36, 36);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 8px;
+    }
+    .header a:hover {
+        background-color: #b84b4b;
+        color: black;
+        border-radius: 8px;
+    }
+    .header a.active {
+        background-color: #4bb8a6;
+        color: rgb(0, 0, 0);
+        border-radius: 8px;
+    }
+    /* Centered search box */
+    .search-container {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .search-container input[type="text"] {
+        width: 40%;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .left{
+      border-radius: 22px;
+    margin-left: -53px;
+    width: 38px;
+    height: 35px;
+    }
+    .right{
+      border-radius: 22px;
+    height: 36px;
+    width: 36px;
+    margin-left: 59%;
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <body>
+      <div class="header">
+          <a class="active" href="/College Project V/index.html">Home</a>
+         
+  
+          <div class="search-container">
+              <input type="text" placeholder="Search...">
+          </div>
+  
+          <div>
+              <a href="contact us.html">Contact Us</a>
+              <a href="/College Project V/logout.html">Logout</a>
+             
+              <span id="user-status"></span>
+          </div>
+      </div>
+    <!-- Product Container -->
+    <div class="container">
+        <!-- Product Image -->
+        <div class="product-image" style="background-image: url(img/bgimage.jpeg);">
+            
+            <img class="mySlides" src="img/lap1.png" style="width:100%" >
+            
+            <img class="mySlides" src="img/lapp2.png" style="width:100%">
+            
+            
+          
+            <button class="left" onclick="plusDivs(-1)" class="auto">&#10094;</button>
+            <button class="right" onclick="plusDivs(1)" class="auto">&#10095;</button>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h1><b>Dell Alienware x14 R2 Gaming Laptop, Intel Core i7-13620H Processor/16GB/1TB SSD/NVIDIA RTX 4050 6GB GDDR6/14'' (35.56cm) QHD+ 165Hz, 3ms, 300nits/Win 11 + MSO'21/McAfee 15 Month/Lunar Silver/2.08kg</b>
+            
+            </h1>
+            <p class="product-price">3,43,599Rs</p>
+            <p style="font-size: xx-large; font-family: Cambria, Cochin, Georgia, Times,;"><u>Description :-</u></p>
+            <p><b>
+              1] Brand                      Dell <br>
+              2] ModelName                	Alienware <br>
+              3] ScreenSize	                18 <br>
+              4] ColourDark                 Metallic Moon <br>
+              5] HardDisk Size	            1 TB <br>
+              6] CPUModel	                  Core i9 <br>
+              7] RAMMemoryInstalledSize	    32 GB <br>
+              8] OperatingSystem            Windows 11 Home <br>
+              9] SpecialFeature	            Backlit Keyboard <br>
+              10] GraphicsCardDescription	  Dedicated <br>
+              </b><br>
+
+                <br><br><b><i> Key Features: </i></b> <br><br>
+                <br>
+                
+                Features- Powerful performance with the latest in CPU(13G HX-series)/GPU (RTX 40-series) technology: Uncompromised gaming experience with a larger screen, full-sized CherryMX keyboard <br><br>
+                Processor: Intel i9-13900HX 13th Generation (3.90 GHz up to 5.40 GHz) 36MB Cache & 24 Cores // RAM & Storage: 32GB, 2x16GB, DDR5, 4800MHz, (2 DIMM Slots, Expandable upto 64GB) & 1TB SSD <br><br>
+                Graphics & Keyboard: NVIDIA GeForce RTX 4080 12GB GDDR6 & Alienware CherryMX ultra-low-profile mechanical Backlit Keyboard with per-key AlienFX // Display: 18.0" QHD+ CompfortView Plus NVIDIA G-SYNC + DDS, 100% DCI-P3, FHD IR Camera 165Hz 3ms <br><br>
+                Ports: Left : (1x) RJ-45, (1x) Global headset jack, (1x) Type-A USB 3.2 Gen 1 Port with PowerShare. Right : (1x) Type-C USB 3.2 Gen 1 Port. Back : (1x) Power/DC-in Port, (2x) Type-C (Thunderbolt 4.0, USB 4 Gen 2, 15W (3A/5V) Power // Software: Win 11 Home + Office H&S 2021 <br><br>
+                <br>
+                <br>Alienware m18 Gaming Laptop
+                Play like a boss with a high-powered, 18-inch gaming laptop that features advanced Alienware Cryo-tech cooling, 13th Gen Intel Core processors and NVIDIA GeForce RTX 40 Series graphics. <br><br>
+                </p>
+
+            <!-- Rating System -->
+            <div class="rating">
+                <input type="radio" name="rating" id="star1"><label for="star1">&#9733;</label>
+                <input type="radio" name="rating" id="star2"><label for="star2">&#9733;</label>
+                <input type="radio" name="rating" id="star3"><label for="star3">&#9733;</label>
+                <input type="radio" name="rating" id="star4"><label for="star4">&#9733;</label>
+                <input type="radio" name="rating" id="star5"><label for="star5">&#9733;</label>
+            </div>
+
+            <!-- Product Buttons -->
+            <div class="product-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="/College Project V/checkout/checkout.html"><button class="buy-now">Buy Now</button></a>
+            </div>
+        </div>
+        
+<br>
+<br>
+<br>
+<p><b>Images:</b></p>
+<br>
+<br>
+<br>
+<br> <div class="watchimage">
+    <img class="wm1" src="img/alien.jpg" alt="class">
+    <img class="wm2" src="img/slien2.jpg" alt="class">
+</div>
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+
+
+        <!-- Reviews Section -->
+        <div class="reviews">
+            <h3>Customer Reviews</h3>
+            <p>John Doe: ★★★★☆ - "Great product, highly recommend!"</p>
+            <p>Jane Smith: ★★★★★ - "Excellent quality and fast shipping."</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Your E-commerce Store. All rights reserved.</p>
+    </div>
+</body>
+</html>
